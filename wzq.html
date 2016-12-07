@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>五子棋</title>
+		<link rel="stylesheet" href="wzq.css"/>
+		<script src="jquery.js"></script>
+		<script src="wzq.js"></script>
+	</head> 
+	<body>
+		<!--主页面-->
+		<ul class="page">
+			<li class="one">五子棋游戏</li>
+			<li class="two">进入游戏</li>
+		</ul>
+		<!--背景-->
+		<div class="bj"></div>
+		<!--声音-->
+		<audio id="audio" src="097.wav"></audio>
+		<audio id="audio1" src="098.wav"></audio>
+		<!--棋画布-->
+		<canvas id="canvas" width="600" height="600"></canvas>
+		<!--秒表-->
+		<canvas id="canvas1" width="180" height="180"></canvas>
+		<canvas id="canvas2" width="180" height="180"></canvas>
+		<!--关卡-->
+		<div id="gq">
+			<button id="start">游戏开始</button>
+			<button id="end">游戏规则</button>
+			<button id="restart">重新开始</button>
+			<button id="out">退出游戏</button>
+		</div>
+		<!--对战-->
+		<ul class="chioce">
+			<li class="ai">人机对战</li>
+			<li class="normal red">人人对战</li>
+		</ul>
+		<!--棋子-->
+		<div id="qizi1">
+			<img src="img/1.png" alt="" />
+		</div>
+		<div id="qizi2">
+			<img src="img/2.png" alt="" />
+		</div>
+		<!--棋谱生成图片-->
+		<div id="qipu">
+			<div class="close" >x</div>
+		</div>
+		<!--弹框-->
+		<div id="info">
+			<span class="text">黑棋赢</span>
+			<!--<div class="button again">再来一局</div>-->
+			<div class="button cancle">返回</div>
+		</div>
+		<!---->
+	</body>
+</html>

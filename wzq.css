@@ -1,0 +1,235 @@
+*{
+			margin:0;
+			padding:0;
+			border:0;
+			list-style: none;
+		}
+		
+		/*主页面*/
+			.page{
+				width:100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				z-index: 999;
+				background: url(img/sy2.jpg) no-repeat center center;
+			}
+			.page .one{
+				width:400px;
+				height:100px;
+				position:absolute;
+				left:500px;
+				top:200px;
+				font-size:80px;
+				color:#606060;
+				font-family:方正舒体;
+			}
+			.page .two{
+				width:200px;
+				height:100px;
+				position:absolute;
+				line-height: 100px;
+				left:500px;
+				bottom:20px;
+				font-size:50px;
+				color:#999999;
+				font-family:方正舒体;
+				cursor:pointer;
+				
+			}
+		/*背景*/
+		.bj{
+			position:fixed;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin: auto;
+			width:100%;
+			background:rgba(234,234,210,1) url(img/bg.jpg) no-repeat center center;
+		}
+		#canvas{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right:0;
+			margin:auto;
+			border:1px solid #000;
+			background:#CC6E09;
+			opacity:0.9;
+			z-index: 10;
+		}
+		/*钟表*/
+		#canvas1{
+			position:absolute;
+			left:120px;
+			top:50px;
+		}
+		#canvas2{
+			position:absolute;
+			right:120px;
+			top:50px;
+		}
+		/*关卡*/
+		#gq{
+			position:absolute;
+			right:150px;
+			top:250px;
+			float:left;
+		}
+		#gq button{
+			display: block;
+			margin-top:20px ;
+			width:100px;
+			height:40px;
+			text-align: center;
+			font-size:22px;
+			font-weight:200;
+			color:#fff;
+			font-family:"方正舒体";
+			background:#dcdcdc;
+			cursor:pointer;
+		}
+		/*棋子*/
+		#qizi1{
+			width:70px;
+			height:70px;
+			position:absolute;
+			left:300px;
+			top:100px;
+			z-index: 50;
+		}
+		#qizi2{
+			width:70px;
+			height:70px;
+			position:absolute;
+			right:300px;
+			top:100px;
+			z-index: 50;
+		}
+		
+		/*棋谱生成图片并下载*/
+		#qipu{
+			width:500px;
+			height:500px;
+			background:#fff;
+			position:absolute;
+			left:0;
+			top:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			z-index:50;
+			box-shadow: 0 0 0 1000px rgba(0,0,0,0.6);
+			transition:all 0.8s ease;
+			/*transform: scale(1,1);*/
+			display:none;
+		}
+		#qipu a{
+			width:100%;
+			height:100%;
+			position:absolute;
+			left:0;
+			top:0;
+			z-index:100;
+		}
+		#qipu img{
+			width:100%;
+		}
+		#qipu .close{
+			width:30px;
+			height:30px;
+			background:red;
+			position:absolute;
+			right:-18px;
+			top:-12px;
+			line-height:30px;
+			text-align:center;
+			font-size:20px;
+			color:#fff;
+			border-radius:50%;
+			cursor:pointer;
+		}
+		
+		/*弹框输赢*/
+		#info{
+			width:300px;
+			height:300px;
+			background:#999999;
+			position:absolute;
+			left:0;
+			top:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			z-index: 100;
+			opacity: 0.8;
+			transition:all 0.8s linear;
+			display: none;
+			z-index:200;
+		}
+		#info span{
+			font-size:80px;
+			text-align: center;	
+			margin-top:100px ;	
+			/*line-height: 300px;	*/
+			color:#fff;
+			display: block;
+			font-family:方正舒体;
+			cursor:pointer;
+		}
+		#info .button{
+			font-size:30px;
+			text-align: center;	
+			margin-top:20px ;		
+			color:#000000;
+			display: block;
+			font-family:方正舒体;
+			cursor:pointer;
+		}
+		
+		#info.active{
+			display: block;
+		}
+		/*对战*/
+		.chioce{
+			position: absolute;
+			left: 200px;
+			top: 300px;
+			width: 100px;
+			height: 100px;
+		}
+		.ai{
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #000;
+			font-size: 20px;
+			border:1px solid #606060;
+			background: #DCDCDC;
+			font-family: 方正舒体;
+			cursor:pointer;
+		}
+		.normal{
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #000;
+			font-size: 20px;
+			margin-top:20px ;
+			border:1px solid #606060;
+			background: #DCDCDC;
+			font-family: 方正舒体;
+			cursor:pointer;
+		}
+		.red{
+			color: red;
+		}
+		
+		
